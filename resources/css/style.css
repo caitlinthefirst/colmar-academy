@@ -4,37 +4,10 @@ html {
 
 /* Pagewide Rules */
 body {
-    width: 960px;
-    margin: 0 auto;
     font-family: Montserrat, sans-serif;
-    background-color: #f3f5f5;
+    background-color: #ffffff;
     color: #4a4a4a;
     flex-direction: column;
-
-}
-
-section {
-
-}
-
-.section-container {
-    flex-direction: row;
-    align-items: center;
-}
-
-.feature {
-    width: 60%;
-    margin: 2rem 1.5rem;
-}
-
-.feature img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-}
-
-.related-content {
-
 }
 
 body,
@@ -42,9 +15,9 @@ header,
 nav,
 .home,
 .section-container,
-.feature,
-.cta,
+.content-wrapper,
 .related-content,
+.content-tile,
 .tile-container,
 .course-tile,
 footer,
@@ -52,14 +25,84 @@ footer,
     display: flex;
 }
 
+header,
+.content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.section-container {
+    background-color: #d8d8d8;
+}
+
+.feature {
+    max-width: 60%;
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.feature-content {
+    margin-top: 2rem;
+    font-size: .9rem;
+    line-height: 1.5rem;
+}
+
+.citation {
+    font-family: Ubuntu, sans-serif;
+}
+
+.related-content {
+    flex-direction: column;
+    max-width: 40%;
+    border: 1px solid #d8d8d8;
+    margin-left: 1.5rem;
+}
+
+.content-tile {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.content-tile img {
+    max-width: 35%;
+    height: auto;
+    margin: auto;
+}
+
+.details {
+    max-width: 65%;
+}
+
+
+#news-events,
+#thesis-exhibits {
+    background-color: #f3f5f5;
+}
+
+
 /* Header + Nav */
 header {
-    background-color: #ffffff;
     height: 4rem;
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
-
 }
 
 .home {
@@ -75,7 +118,6 @@ header {
 
 .light-weight {
     font-weight: 300;
-
 }
 
 nav {
@@ -90,19 +132,31 @@ nav {
 }
 
 /* Welcome Banner */
-#welcome-banner {
-
-}
-
 .headline-cta {
-    font-weight: bold;
-}
+    display: block;
+    max-width: 40%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-left: 1rem;
+    margin-left: 1.5rem;
+ }
 
-.headline-cta h2 {
-    font-size: 2rem;
-}
+ .headline-cta h2 {
+     font-size: 2.25rem;
+     line-height: 2.75rem;
+ }
 
 .cta {
+    display: block;
+    background-color: #4a4a4a;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: .5rem 3rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
 
 }
 
