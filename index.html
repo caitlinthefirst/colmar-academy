@@ -3,7 +3,7 @@
     <head>
         <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
         <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Ubuntu:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800" rel="stylesheet">
         <meta charset="utf-8">
         <title></title>
     </head>
@@ -11,75 +11,102 @@
     <!-- Header + Nav -->
         <header>
 
-            <div class="home">
-                <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
-                <h1 class="logo-text">COLMAR<span class="light-weight">ACADEMY</span>
-                </h1>
-            </div>
-
             <nav>
-                <a href="#campus" class="nav-item">On campus</a>
-                <a href="#online" class="nav-item">Online</a>
-                <a href="#business" class="nav-item">For companies</a>
-                <a href="#sign-in" class="nav-item">Sign in</a>
+
+                <div class="home">
+                    <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo" class="logo">
+                    <h1 class="logo-text">COLMAR<span class="light-weight">ACADEMY</span>
+                    </h1>
+                </div>
+
+                <div class="nav-menu">
+                    <a href="#campus" class="nav-item">On campus</a>
+                    <a href="#online" class="nav-item">Online</a>
+                    <a href="#business" class="nav-item">For companies</a>
+                    <a href="#sign-in" class="nav-item">Sign in</a>
+                </div>
+
             </nav>
 
         </header>
 
     <!-- Welcome Banner -->
-        <section class="section-container" id="welcome-banner">
+        <div class="section-wrapper-gray">
 
-            <div class="content-wrapper">
+            <section class="section-container" id="welcome-banner">
 
                 <div class="feature">
                     <img class="feature-image" src="./resources/images/banner.jpg" alt="Students studying together at a shady picnic table">
                 </div>
 
-                <div class="headline-cta">
-                    <h2>Learn something new every day.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#apply" class="cta">Start here</a>
+                <div class="related-content">
+                    <div class="headline-cta">
+                        <h2>Learn something new every day.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#apply" class="cta">Start here</a>
+                    </div>
                 </div>
 
-            </div>
+            </section>
 
-        </section>
+        </div>
 
     <!-- News and Events -->
         <section class="section-container" id="news-events">
 
-            <div class="content-wrapper">
-
-                <div class="feature">
-                    <img class="feature-image" src="./resources/images/information-main.jpg" alt="">
-                    <div class="feature-content">
-                        <h2>It doesn't hurt to keep practicing</h2>
-                        <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
-                        <br>
-                        <br>
-                        <span class="citation">Emanuel, Sr Strategist at Hiring.com</span></p>
-                    </div>
-                </div>
-                <div class="related-content">
-
-                    <div class="content-tile">
-                        <img src="./resources/images/information-orientation.jpg" alt="">
-                        <div class="details">
-                            <h3>Orientation Date </h3>
-                            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                            <a href="#orientation" class="read-more">Read more</a>
-                        </div>
-                    </div>
-
+            <div class="feature">
+                <img class="feature-image" src="./resources/images/information-main.jpg" alt="">
+                <div class="feature-content">
+                    <h2>It doesn't hurt to keep practicing</h2>
+                    <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
+                    <br>
+                    <br>
+                    <span class="citation">Emanuel, Sr Strategist at Hiring.com</span></p>
                 </div>
             </div>
+
+            <div class="related-content">
+
+                <div class="content-tile">
+                    <img src="./resources/images/information-orientation.jpg" alt="">
+                    <div class="details">
+                        <h3>Orientation date </h3>
+                        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                        <a href="#orientation" class="read-more">Read more</a>
+                    </div>
+                </div>
+
+                <div class="content-tile">
+                    <img src="./resources/images/information-campus.jpg" alt="">
+                    <div class="details">
+                        <h3>Our campus</h3>
+                        <p>Find which campus is close by you</p>
+                        <a href="#campus" class="read-more">Read more</a>
+                    </div>
+                </div>
+
+                <div class="content-tile section-wrapper-gray">
+                    <img src="./resources/images/information-guest-lecture.jpg" alt="">
+                    <div class="details">
+                        <h3>Our guest lecture</h3>
+                        <p>Join a keynote with Oliver Sacks about music in medical treatment</p>
+                        <a href="#campus" class="read-more">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
 
     <!-- Academic Programs -->
-        <section class="tile-container" id="academic-programs">
-            <div class="course-tile">
-            </div>
-        </section>
+        <div class="section-wrapper-ltgray">
+
+            <section class="tile-section" id="academic-programs">
+                <div class="course-tile">
+                </div>
+            </section>
+
+        </div>
 
     <!-- Thesis Exhibits -->
         <section class="section-container" id="thesis-exhibits">
