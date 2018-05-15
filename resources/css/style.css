@@ -18,6 +18,7 @@ nav,
 .related-content,
 .content-tile,
 .tile-section,
+.tile-container,
 .course-tile,
 footer,
 .foot-nav {
@@ -25,7 +26,8 @@ footer,
 }
 
 nav,
-.section-container {
+.section-container,
+.tile-section {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -52,12 +54,18 @@ h3 {
     line-height: 2rem;
 }
 
+h4 {
+    text-transform: uppercase;
+    padding: .5rem 0;
+}
+
 a {
     color: #4a90e2;
     text-decoration: none;
 }
 
-.section-container {
+.section-container,
+.tile-section {
     padding: 2rem 0;
 }
 
@@ -113,6 +121,9 @@ a {
     background-color: #d8d8d8;
 }
 
+.section-wrapper-ltgray {
+    background-color: #eaebec;
+}
 
 /* Header + Nav */
 header {
@@ -179,24 +190,48 @@ nav {
 }
 
 /* News and Events */
-#news-events {
-
-}
-
 .citation {
     font-size: .75rem;
     font-weight: 600;
 }
 
 /* Academic Programs */
-.section-wrapper-ltgray {
-    background-color: #eaebec;
+.course-tile,
+.tile-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#academic-programs {
 
+.tile-section {
+}
+
+.tile-container {
+    margin-top: .5rem;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    align-items: stretch;
 }
 
 .course-tile {
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 30%;
+    margin: 1rem;
+    background-color: #ffffff;
+}
+
+.course-tile img {
+    max-width: 100%;
+    height: auto;
+}
+
+.course-detail {
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    padding: 1.2rem;
+    padding-bottom: 1.5rem;
 
 }
 
