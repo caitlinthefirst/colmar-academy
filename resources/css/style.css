@@ -188,13 +188,13 @@ header {
     font-size: 1.25rem;
     line-height: 1.75rem;
     padding-left: 1rem;
- }
+}
 
- .headline-cta h2 {
-     font-size: 2.25rem;
-     font-weight: 800;
-     line-height: 2.25rem;
- }
+.headline-cta h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 2.25rem;
+}
 
 .cta {
     display: block;
