@@ -90,7 +90,6 @@ a {
 
 /* Two-Column Layout w/Feature */
 /* Feature Column */
-
 .feature {
     max-width: 55%;
     margin-right: .5rem;
@@ -232,6 +231,10 @@ header {
     align-items: stretch;
 }
 
+.mobile-tile-container {
+    display: none;
+}
+
 .course-tile {
     flex-direction: column;
     justify-content: flex-start;
@@ -251,7 +254,6 @@ header {
     line-height: 1.25rem;
     padding: 1.2rem;
     padding-bottom: 1.5rem;
-
 }
 
 /* Thesis Exhibits */
@@ -286,7 +288,10 @@ footer {
     margin-left: 1.5rem;
 }
 
+/* Mobile View Rules */
+
 @media only screen and (max-width: 700px) {
+/* Pagewide */
     .mobile-nav,
     .section-container,
     .tile-section,
@@ -298,7 +303,7 @@ footer {
 
     .section-container {
         flex-direction: column;
-        padding: 0;
+        padding: 2rem 0;
     }
 
     h2,
@@ -309,6 +314,46 @@ footer {
     h3 {
         font-size: 1rem;
     }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-wrapper-ltgray,
+    #news-events .section-wrapper-gray {
+        background-color: inherit;
+    }
+
+/* Two-Column Feature */
+    .feature,
+    .related-content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .related-content {
+        border: none;
+    }
+
+    .content-tile {
+        flex-direction: column;
+        width: auto;
+        padding: 1rem;
+        border: none;
+    }
+
+    .details {
+        width: 100%;
+        padding: 1rem;
+    }
+
+/* Navigation */
     .desktop-nav {
         display: none;
     }
@@ -323,16 +368,7 @@ footer {
         padding: 0 1.5rem;
     }
 
-    .feature,
-    .related-content {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .related-content {
-        border: none;
-    }
-
+/* Welcome Section */
     .headline-cta {
         margin: 2rem 1rem;
         padding: 0;
@@ -344,34 +380,64 @@ footer {
         max-width: 100%;
     }
 
-    /* News and Events */
+/* News and Events */
     #news-events .feature {
         display: none;
     }
 
-    .content-tile {
-        flex-direction: column;
-        width: auto;
-        padding: 1rem;
-        border: none;
+/* Academic Programs */
+    #academic-programs {
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
     }
 
-    .desktop-img {
+    .tile-section {
+        padding: 2rem 1rem;
+    }
+
+    .tile-container {
         display: none;
     }
 
-    .mobile-img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .details {
+    .mobile-tile-container {
+        display: flex;
         width: 100%;
-        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 1rem;
     }
 
+    .mobile-course-tile {
+        display: block;
+        color: inherit;
+        text-align: left;
+        background-color: #d8d8d8;
+        padding: 1rem;
+        margin-top: .5rem;
+    }
 
+    /* Thesis Exhibits */
 
+    #thesis-exhibits .related-content,
+    #thesis-exhibits .feature-content {
+        display: none;
+    }
 
+    /* Footer */
+    footer {
+        border: none;
+    }
+
+    .footer-container {
+        padding: 0;
+    }
+
+    .copyright {
+        margin: 0;
+        padding: .5rem 1rem 1.5rem 1rem;
+    }
+
+    .foot-nav {
+        display: none;
+    }
 }
