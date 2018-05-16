@@ -20,6 +20,7 @@ nav,
 .tile-section,
 .tile-container,
 .course-tile,
+.thesis-columns,
 footer,
 .foot-nav {
     display: flex;
@@ -27,7 +28,8 @@ footer,
 
 nav,
 .section-container,
-.tile-section {
+.tile-section,
+.thesis-columns {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -46,6 +48,11 @@ h2 {
     font-weight: 800;
     line-height: 2.5rem;
     padding-bottom: 1.5rem;
+}
+
+.tile-section h2,
+#thesis-exhibits h2 {
+    text-align: center;
 }
 
 h3 {
@@ -202,14 +209,11 @@ nav {
     align-items: center;
 }
 
-.tile-section {
-}
-
 .tile-container {
     margin-top: .5rem;
     padding: 0 4.5rem;
     flex-flow: row wrap;
-    justify-content: stretch;
+    justify-content: center;
     align-items: stretch;
 }
 
@@ -237,5 +241,17 @@ nav {
 
 /* Thesis Exhibits */
 #thesis-exhibits {
+    flex-direction: column;
+    justify-content: center;
+}
 
+.feature video {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#thesis-exhibits .related-content,
+#thesis-exhibits .content-tile {
+    border: none;
 }
