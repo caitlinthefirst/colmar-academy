@@ -11,7 +11,7 @@ body {
 }
 
 body,
-nav,
+.desktop-nav,
 .section-container,
 .home,
 .nav-menu,
@@ -26,16 +26,16 @@ nav,
     display: flex;
 }
 
-nav,
+.desktop-nav,
 .section-container,
 .tile-section,
 .thesis-columns,
 .footer-container {
-    max-width: 1100px;
+    max-width: 1042px;
     margin: 0 auto;
 }
 
-nav,
+.desktop-nav,
 .nav-menu,
 .section-container,
 .content-tile,
@@ -122,9 +122,13 @@ a {
     border-bottom: 2px solid #d8d8d8;
 }
 
-.content-tile img {
+.desktop-img {
     width: 35%;
     height: auto;
+}
+
+.mobile-img {
+    display: none;
 }
 
 .details {
@@ -147,16 +151,21 @@ header {
     background-color: #ffffff;
 }
 
-nav {
+.desktop-nav {
     justify-content: space-between;
     height: 4rem;
     font-size: 1rem;
-    padding-left: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.mobile-nav {
+    display: none;
 }
 
 .home {
     height: 2rem;
     align-items: center;
+    color: inherit;
 }
 
 .logo {
@@ -274,4 +283,94 @@ footer {
 
 .copyright {
     margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .mobile-nav,
+    .section-container,
+    .tile-section,
+    .thesis-columns,
+    .footer-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .section-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    h2,
+    .headline-cta h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 4rem;
+        font-size: 1rem;
+        padding: 0 1.5rem;
+    }
+
+    .feature,
+    .related-content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .related-content {
+        border: none;
+    }
+
+    .headline-cta {
+        margin: 2rem 1rem;
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .cta {
+        max-width: 100%;
+    }
+
+    /* News and Events */
+    #news-events .feature {
+        display: none;
+    }
+
+    .content-tile {
+        flex-direction: column;
+        width: auto;
+        padding: 1rem;
+        border: none;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .details {
+        width: 100%;
+        padding: 1rem;
+    }
+
+
+
+
 }
